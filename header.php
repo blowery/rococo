@@ -5,3 +5,4 @@
     <title>my blog</title>
     <?php wp_head(); ?>
   </head>
+  <body>
