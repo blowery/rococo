@@ -1,7 +1,9 @@
-<div class="sidebar">
-<h2>This is my sidebar</h2>
-
-<h2>Meta</h2>
+<div id="sidebar">
+  <ul>
+    <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+      Oh hell. No sidebar.
+    <?php endif; ?>
+  </ul>
 <?php wp_meta(); ?>
 
 </div>
