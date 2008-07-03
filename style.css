@@ -120,7 +120,7 @@ a:hover {
 }
 
 .entry-title .meta {
-  font-size: 75%;
+  font-size: 50%;
   color: #888;
   font-weight: normal;
   padding-left: 1em;
@@ -170,6 +170,19 @@ a:hover {
   font-weight: bold;
   margin: 0.8em 0;
   padding-top: 12px;
+}
+
+.entry-title .meta .edit a {
+  border-color: #f00;
+  background-color: #fffbfb;
+  background-color: rgba(255,0,0,0.2);
+  color: #f00;
+  padding: 0 1em;
+}
+
+.entry-title .meta .edit a:hover {
+  background-color: #fffafa;
+  background-color: rgba(255,0,0,0.3);
 }
 
 #sidebar {
