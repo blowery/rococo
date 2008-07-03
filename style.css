@@ -74,17 +74,17 @@ a:link, a:visited {
   text-decoration: none;
   border-bottom: 1px solid rgb(255,247,204);
   background-color: #fffdf4;
-  background-color: rgba(255, 247, 204, 0.2);
+  /*background-color: rgba(255, 247, 204, 0.2);*/
 }
 
 a:visited {
   color: #666;
 }
 
-a:hover {
+a:hover, #title a:hover {
   border-bottom: 1px solid rgb(255,236,128);
   background-color: #fffbe5;
-  background-color: rgba(255,247,204,0.5);
+  /*background-color: rgba(255,247,204,0.5);*/
 }
 
 #page {
@@ -100,6 +100,8 @@ a:hover {
 
 #title a {
   color: #333;
+  border: none;
+  background: transparent;
 }
 
 #title a .leftout {
@@ -183,6 +185,68 @@ a:hover {
 .entry-title .meta .edit a:hover {
   background-color: #fffafa;
   background-color: rgba(255,0,0,0.3);
+}
+
+.navigation {
+  margin: 3.2em 0;
+  font-size: 1.2em;
+}
+
+.navigation .forward {
+  float: right;
+}
+
+.navigation .backward {
+  float: left;
+}
+
+#respond, #comments {
+  margin: 3.2em 0 1.6em 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.comment {
+  margin: 1.6em 0;
+  padding: 1.6em 0;
+}
+
+.comment+.comment {
+  border-top: 1px dotted #ddd;
+}
+
+.commenter {
+  float: left;
+  width: 150px;
+  position: relative;
+}
+
+.commenter .avatar {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+.commenter .commentmetadata, .commenter cite {
+  margin-left: 50px
+}
+
+.comment-entry {
+  margin-left: 200px;
+}
+
+#commentform p {
+  margin: 1.6em 0;
+}
+
+#commentform label {
+  text-transform: uppercase;
+  padding-left: 1em;
+  border-bottom: 1px dotted #ddd;
+  color: #666;
+}
+
+#commentform textarea {
+  width: 100%;
 }
 
 #sidebar {

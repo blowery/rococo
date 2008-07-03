@@ -12,5 +12,5 @@
   <body>
     <div id="page">
       <h1 id="title">
-        <a href="<?php bloginfo('url'); ?>">b<span class="leftout">en</span>lowery</a>
+        <a href="<?php bloginfo('url'); ?>" title="Take me home">b<span class="leftout">en</span>lowery</a>
       </h1>
