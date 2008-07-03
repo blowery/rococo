@@ -69,11 +69,16 @@ strong, em, b, i, .slanty, #sidebar h2 {
   font-family: Cambria, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
-a {
+a:link, a:visited {
+  color: #000;
   text-decoration: none;
   border-bottom: 1px solid rgb(255,247,204);
   background-color: #fffdf4;
   background-color: rgba(255, 247, 204, 0.2);
+}
+
+a:visited {
+  color: #666;
 }
 
 a:hover {
