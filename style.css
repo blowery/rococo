@@ -59,10 +59,27 @@ blockquote, q {
 
 /* End Eric Meyer CSS Reset */
 
-html, body {
-  font-family: "Lucida Grande";
+body {
+  font-family: Cambria, "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
   font-size: 13.3333px;
   line-height: 1.6;
+}
+
+strong, em, b, i, .slanty, #sidebar h2 {
+  font-family: Cambria, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255,247,204);
+  background-color: #fffdf4;
+  background-color: rgba(255, 247, 204, 0.2);
+}
+
+a:hover {
+  border-bottom: 1px solid rgb(255,236,128);
+  background-color: #fffbe5;
+  background-color: rgba(255,247,204,0.5);
 }
 
 #page {
@@ -78,27 +95,37 @@ html, body {
 
 #title a {
   color: #333;
-  text-decoration: none;
 }
 
 #title a .leftout {
   color: #888;
 }
 
+.hentry {
+  margin: 3.2em 0;
+}
+
 .entry-title {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .entry-title a {
-  text-decoration: none;
   color: #333;
 }
 
 .entry-title .meta {
-  font-size: 41.5%;
+  font-size: 75%;
   color: #888;
+  font-weight: normal;
+  padding-left: 1em;
 }
+
+.entry-title .meta a {
+  color: #777;
+  font-weight: bold;
+}
+
 .entry-content {
   position: relative;
 }
@@ -118,23 +145,50 @@ html, body {
   text-indent: 2em;
 }
 
+.entry-content .photo {
+  border: 1px solid #ddd;
+  background-color: #eee;
+  float: left;
+  padding: 12px;
+  margin: 1.6em 0;
+}
+
+.entry-content .photo a {
+  border: none;
+  background: transparent;
+}
+
+.entry-content .photo .caption {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0.8em 0;
+  padding-top: 12px;
+}
+
 #sidebar {
-  background-color: #272727;
+  background: #383d44 url(images/bg-footer.jpg) repeat-x top left;
   color: #fff;
   padding: 50px 0 50px 100px;
   margin-top: 50px;
+  font-weight: bold;
 }
 
 #sidebar a {
-  color: #ddd;
+  background-color: rgba(0,0,0,0.05);
+  color: #fff;
+  border-bottom: 1px solid #000;
 }
 
-#sidebar li, #sidebar .textwidget {
-  padding-left: 12.5px;
+#sidebar a:hover {
+  border-bottom: 1px solid #eee;
 }
 
 #sidebar h2 {
-  font-size: 100%;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 1.2em;
   text-transform: uppercase;
 }
 
@@ -143,7 +197,7 @@ html, body {
   width: 150px;
   padding-left: 0;
   padding-right: 50px;
-  color: #aaa;
+  color: #fff;
 }
 
 #sidebar label.hidden {
@@ -151,8 +205,6 @@ html, body {
 }
 
 #sidebar #s {
-  border: 1px solid #A61414;
-  background-color: #E6261C;
   margin-bottom: 6px;
   font-size: 150%;
   font-weight: bold;

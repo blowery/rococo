@@ -7,7 +7,7 @@
 
     <?php while (have_posts()) : the_post(); ?>
       <div id="post-<?php the_ID(); ?>" class="post hentry">
-        <h2 class="entry-title"><a href="" rel="bookmark"><?php the_title(); ?></a>
+        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
         <span class="meta">
           In <?php the_category(",") ?> on <abbr class="published" 
                               title="<?php the_time('c'); ?>"><?php the_time('M j Y'); ?></abbr>.
@@ -17,6 +17,7 @@
           <?php the_content(); ?>
         </div>
       </div>
+      <div class="clear-both"></div>
     <?php endwhile; ?>
 
   <?php endif; ?>
