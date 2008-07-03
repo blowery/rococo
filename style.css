@@ -7,3 +7,163 @@ Author URI: http://blowery.org/
 .
 Copyright Ben Lowery, 2008. You can use this too.
 */
+
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: #404040;
+    background: #fff;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+/* End Eric Meyer CSS Reset */
+
+html, body {
+  font-family: "Lucida Grande";
+  font-size: 13.3333px;
+  line-height: 1.6;
+}
+
+#page {
+  width: 600px;
+  margin-left: 100px;
+}
+
+#title {
+  margin: 50px 0 50px -50px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+#title a {
+  color: #333;
+  text-decoration: none;
+}
+
+#title a .leftout {
+  color: #888;
+}
+
+.entry-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.entry-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.entry-title .meta {
+  font-size: 41.5%;
+  color: #888;
+}
+.entry-content {
+  position: relative;
+}
+
+.entry-content .aside {
+  text-indent: 0;
+  font-size: 75%;
+  line-height: 2.13333;
+  padding: 2.13333em 0 2.13333em 1em;
+  position: absolute;
+  left: 650px;
+  width: 100px;
+  border-left: 1px solid #eee;
+}
+
+.entry-content p+p {
+  text-indent: 2em;
+}
+
+#sidebar {
+  background-color: #272727;
+  color: #fff;
+  padding: 50px 0 50px 100px;
+  margin-top: 50px;
+}
+
+#sidebar a {
+  color: #ddd;
+}
+
+#sidebar li, #sidebar .textwidget {
+  padding-left: 12.5px;
+}
+
+#sidebar h2 {
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+#sidebar .widget {
+  float: left;
+  width: 150px;
+  padding-left: 0;
+  padding-right: 50px;
+  color: #aaa;
+}
+
+#sidebar label.hidden {
+  display: none;
+}
+
+#sidebar #s {
+  border: 1px solid #A61414;
+  background-color: #E6261C;
+  margin-bottom: 6px;
+  font-size: 150%;
+  font-weight: bold;
+  width: 150px;
+}
+
+#sidebar input[type="submit"] {
+  font-weight: bold;
+}
+
+.clear-both {
+  clear: both;
+  height: 1px;
+}
