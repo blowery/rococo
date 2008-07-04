@@ -69,6 +69,10 @@ strong, em, b, i, .slanty, #sidebar h2 {
   font-family: Cambria, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
+em,i {
+  font-style: italic;
+}
+
 a:link, a:visited {
   color: #000;
   text-decoration: none;
