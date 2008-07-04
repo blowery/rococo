@@ -26,7 +26,7 @@
 
 	<?php foreach ($comments as $comment) : ?>
 
-		<li class="comment<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
+		<li class="comment<?php echo $oddcomment; ?> <?php if(defined("author_highlight")) author_highlight(); ?>" id="comment-<?php comment_ID() ?>">
       <div class="commenter">
 			  <?php echo get_avatar( $comment, 32 ); ?>
 			  <cite><?php comment_author_link() ?></cite>

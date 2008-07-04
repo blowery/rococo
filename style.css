@@ -211,12 +211,15 @@ a:hover, #title a:hover {
 }
 
 .comment {
-  margin: 1.6em 0;
-  padding: 1.6em 0;
+  padding: 1.6em;
 }
 
 .comment+.comment {
   border-top: 1px dotted #ddd;
+}
+
+.commentlist .highlighted {
+  background-color: #fffbf0;
 }
 
 .commenter {
