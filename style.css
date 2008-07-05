@@ -73,6 +73,14 @@ em,i {
   font-style: italic;
 }
 
+pre {
+  font-family: Monaco, Consolas, Andale Mono, "Courier New", monospace;
+  font-size: 80%;
+  line-height: 2;
+  margin: 2em 0;
+  padding-left: 2em;
+}
+
 a:link, a:visited {
   color: #000;
   text-decoration: none;
