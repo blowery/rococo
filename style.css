@@ -65,20 +65,12 @@ body {
   line-height: 1.6;
 }
 
-strong, em, b, i, .slanty, #sidebar h2 {
+strong, em, b, i, .slanty, #sidebar h2, .entry-content blockquote {
   font-family: Cambria, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
 em,i {
   font-style: italic;
-}
-
-pre {
-  font-family: Monaco, Consolas, Andale Mono, "Courier New", monospace;
-  font-size: 80%;
-  line-height: 2;
-  margin: 2em 0;
-  padding-left: 2em;
 }
 
 a:link, a:visited {
@@ -190,6 +182,31 @@ a:hover, #title a:hover {
   padding-top: 12px;
 }
 
+.entry-content pre, .entry-content code {
+  font-family: Monaco, Consolas, Andale Mono, "Courier New", monospace;
+  font-size: 80%;
+}
+
+.entry-content pre {
+  line-height: 2;
+  margin: 2em 0;
+  padding-left: 2em;
+}
+
+.entry-content dt {
+  font-style: italic;
+  margin-top: 1.6em;
+}
+
+.entry-content dd {
+  margin: 0 1.6em 1.6em;
+}
+
+.entry-content blockquote {
+  font-style: italic;
+  margin: 1.6em 3.2em;
+}
+
 .entry-title .meta .edit a {
   border-color: #f00;
   background-color: #fffbfb;
@@ -299,6 +316,11 @@ a:hover, #title a:hover {
   padding-left: 0;
   padding-right: 50px;
   color: #fff;
+}
+
+#sidebar .widget li {
+  margin-bottom: 0.8em;
+  /*padding-left: 0.8em; save this till i find an item icon */
 }
 
 #sidebar label.hidden {
