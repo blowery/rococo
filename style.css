@@ -112,6 +112,10 @@ a:hover, #title a:hover {
   color: #888;
 }
 
+.hfeed {
+  position: relative;
+}
+
 .hentry {
   margin: 3.2em 0;
 }
@@ -135,10 +139,6 @@ a:hover, #title a:hover {
 .entry-title .meta a {
   color: #777;
   font-weight: bold;
-}
-
-.entry-content {
-  position: relative;
 }
 
 .entry-content .aside {
@@ -294,7 +294,8 @@ a:hover, #title a:hover {
 }
 
 #sidebar a {
-  background-color: rgba(0,0,0,0.05);
+  /*background-color: rgba(0,0,0,0.05); */
+  background-color: transparent;
   color: #fff;
   border-bottom: 1px solid #000;
 }
@@ -341,4 +342,10 @@ a:hover, #title a:hover {
 .clear-both {
   clear: both;
   height: 1px;
+}
+
+#wpstats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
