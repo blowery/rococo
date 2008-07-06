@@ -21,6 +21,18 @@
       <div class="clear-both"></div>
     <?php endwhile; ?>
 
+		<div class="navigation">
+			<div class="backward"><?php next_posts_link('&laquo; Previously') ?></div>
+			<div class="forward"><?php previous_posts_link('Subsequently &raquo;') ?></div>
+		  <div class="clear-both"></div>
+    </div>
+
+	<?php else : ?>
+
+		<h2 class="center">Not Found</h2>
+		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+
   <?php endif; ?>
 
 </div>
