@@ -326,7 +326,6 @@ a:hover, #title a:hover {
 #sidebar h2 {
   font-size: 1.2em;
   font-style: italic;
-  margin-bottom: 1.2em;
   text-transform: uppercase;
 }
 
@@ -339,7 +338,8 @@ a:hover, #title a:hover {
 }
 
 #sidebar .widget li {
-  margin-bottom: 0.8em;
+  margin-left: 1em;
+  text-indent: -1em;
   /*padding-left: 0.8em; save this till i find an item icon */
 }
 

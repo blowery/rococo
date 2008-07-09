@@ -27,7 +27,6 @@ foreach($myposts as $post):
   }
 	if($d['year'] != $year):
   		$year = $d['year']; 
-      $newmo = '';
 ?>
 </ul>
 <h3 class="year"><?php echo $year; ?></h3>
