@@ -18,13 +18,12 @@
           <?php the_content(); ?>
         </div>
       </div>
-      <div class="clear-both"></div>
+
       <div class="navigation">
         <div class="backward"><?php previous_post_link('&laquo; %link') ?></div>
         <div class="forward"><?php next_post_link('%link &raquo;') ?></div>
-        <div class="clear-both"></div>
       </div>
-
+      <div class="clear-both"></div>
       <?php comments_template(); ?>
 
     <?php endwhile; else: ?>
