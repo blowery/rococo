@@ -123,7 +123,7 @@ a:hover, #title a:hover {
 
 .hentry {
   clear: both;
-  margin: 3.2em 0;
+  margin: 3.2em 0 6.4em;
 }
 
 .entry-title {
@@ -158,8 +158,13 @@ a:hover, #title a:hover {
   border-left: 1px solid #eee;
 }
 
+.entry-content ul {
+  margin: 1.6em 0;
+}
+
 .entry-content ul li {
   list-style: disc;
+  margin: 0 1.6em;
 }
 
 .entry-content p {
