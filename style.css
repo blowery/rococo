@@ -163,7 +163,7 @@ a:hover, #title a:hover {
 }
 
 .entry-content p {
-  margin: 1.6em 0;
+  margin-bottom: 1.6em;
 }
 
 .entry-content .photo {
