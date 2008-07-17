@@ -162,8 +162,8 @@ a:hover, #title a:hover {
   list-style: disc;
 }
 
-.entry-content p+p {
-  text-indent: 2em;
+.entry-content p {
+  margin: 1.6em 0;
 }
 
 .entry-content .photo {
