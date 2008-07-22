@@ -171,24 +171,24 @@ a:hover, #title a:hover {
   margin-bottom: 1.6em;
 }
 
-.entry-content .photo {
-  float: left;
+.entry-content .photo, .entry-content .wp-caption {
   margin-bottom: 0.8em;
 }
 
-.entry-content .photo a {
+.entry-content .photo a, .entry-content .wp-caption a {
   border: none;
   background: transparent;
 }
 
-.entry-content .photo img {
+.entry-content .photo img, .entry-content .wp-caption img {
   background-color: #fff;
   border: 1px solid #333;
 }
 
-.entry-content .photo .caption {
+.entry-content .photo .caption, .wp-caption-text {
   text-align: center;
   font-style: italic;
+  font-size: 75%;
   margin-top: 0.8em;
 }
 
