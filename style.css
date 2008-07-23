@@ -167,6 +167,11 @@ a:hover, #title a:hover {
   margin: 0 1.6em;
 }
 
+.entry-content ol li {
+  list-style: decimal;
+  margin: 0 1.6em;
+}
+
 .entry-content p {
   margin-bottom: 1.6em;
 }
