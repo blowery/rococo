@@ -9,9 +9,8 @@
       <div id="post-<?php the_ID(); ?>" class="post hentry">
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
         <span class="meta">
-          In <?php the_category(",") ?> on <abbr class="published" 
-                              title="<?php the_time('c'); ?>"><?php the_time('M j Y'); ?></abbr>.
-          <?php comments_popup_link("No comments.", "1 comment.", "% comments.", "comments", "Sorry, comments are closed."); ?>
+          <abbr class="published" title="<?php the_time('c'); ?>"><?php relative_post_the_date(); ?></abbr>. 
+          <?php comments_popup_link("no comments.", "1 comment.", "% comments.", "comments", "closed comments"); ?>
         <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
         </span></h2>
         <div class="entry-content">
