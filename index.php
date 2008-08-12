@@ -7,12 +7,12 @@
 
     <?php while (have_posts()) : the_post(); ?>
       <div id="post-<?php the_ID(); ?>" class="post hentry">
-        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-        <span class="meta">
+        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+        <div class="meta">
           <abbr class="published" title="<?php the_time('c'); ?>"><?php relative_post_the_date(); ?></abbr>. 
           <?php comments_popup_link("no comments.", "1 comment.", "% comments.", "comments", "closed comments"); ?>
         <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
-        </span></h2>
+        </div>
         <div class="entry-content">
           <?php the_content(); ?>
         </div>
