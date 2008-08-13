@@ -65,6 +65,11 @@ body {
   line-height: 1.6;
 }
 
+abbr {
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
 strong, em, b, i, 
 .slanty, 
 #sidebar h2, 
@@ -93,7 +98,23 @@ a:hover, #title a:hover {
   background-color: #ffa;
   /*background-color: rgba(255,247,204,0.5);*/
 }
+table {
+  border-collapse: collapse;
+  margin: 1.6em auto;
+}
 
+td, th {
+  border: 1px solid #eee;
+  padding: 0.4em 0.8em;
+}
+td { text-align: right; }
+th { 
+  text-align: center;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
 #page {
   width: 600px;
   margin-left: 100px;
