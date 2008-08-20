@@ -358,7 +358,7 @@ th {
 
 #sidebar .widget {
   float: left;
-  width: 150px;
+  width: 175px;
   padding-left: 0;
   padding-right: 50px;
   color: #fff;
@@ -417,4 +417,46 @@ th {
 
 .newmonth {
   margin-top: 1.6em;
+}
+
+#lwp_sfd { 
+  font-weight: bold; 
+  font-size: 1.2em;
+}
+
+#lwp_sbf {
+  margin-bottom: 1.6em;
+}
+
+#lwp_ps div {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#lwp_ps #lwp_cloud {
+  text-transform: none;
+  font-weight: normal;
+}
+
+#lwp_cloud a {
+  margin: 0 0.5em 0 0;
+}
+
+#lwp_f {
+  margin: 1.6em 0 !important;
+}
+
+#lwp_f table { 
+  margin: 0;
+}
+
+#lwp_f td { 
+  border: none; 
+  padding: 0;
+  vertical-align: middle;
+}
+
+#lwp_f td a {
+  border: none;
 }
