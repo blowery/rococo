@@ -35,4 +35,7 @@
 </div>
 
 <?php get_sidebar(); ?>
+<script type="text/javascript" src="/js/dojo/dojo.js"></script>
+<script type="text/javascript" src="/js/blowery/charting.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/roast-charts.js"></script>
 <?php get_footer(); ?>
