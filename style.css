@@ -65,6 +65,11 @@ body {
   line-height: 1.6;
 }
 
+abbr {
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
 strong, em, b, i, 
 .slanty, 
 #sidebar h2, 
@@ -81,8 +86,7 @@ em,i {
 a:link, a:visited {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px solid rgb(255,247,204);
-  background-color: #fffdf4;
+  background-color: #ffc;
   /*background-color: rgba(255, 247, 204, 0.2);*/
 }
 
@@ -91,11 +95,26 @@ a:visited {
 }
 
 a:hover, #title a:hover {
-  border-bottom: 1px solid rgb(255,236,128);
-  background-color: #fffbe5;
+  background-color: #ffa;
   /*background-color: rgba(255,247,204,0.5);*/
 }
+table {
+  border-collapse: collapse;
+  margin: 1.6em auto;
+}
 
+td, th {
+  border: 1px solid #eee;
+  padding: 0.4em 0.8em;
+}
+td { text-align: right; }
+th { 
+  text-align: center;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
 #page {
   width: 600px;
   margin-left: 100px;
@@ -123,26 +142,32 @@ a:hover, #title a:hover {
 
 .hentry {
   clear: both;
-  margin: 3.2em 0;
+  margin: 3.2em 0 6.4em;
 }
 
 .entry-title {
   font-size: 1.5em;
   font-weight: bold;
+  margin: 0.8em 0 0;
 }
 
-.entry-title a {
+.entry-title a, .navigation a {
   color: #333;
+  background-color: transparent;
 }
 
-.entry-title .meta {
-  font-size: 50%;
+.entry-title a:hover, .navigation a:hover {
+  background-color: #ffc;
+}
+
+.meta {
+  font-size: 82.5%;
   color: #888;
   font-weight: normal;
   padding-left: 1em;
 }
 
-.entry-title .meta a {
+.meta a {
   color: #777;
   font-weight: bold;
 }
@@ -158,32 +183,36 @@ a:hover, #title a:hover {
   border-left: 1px solid #eee;
 }
 
+.entry-content li {
+  margin: 0 3.2em;
+}
+
 .entry-content ul li {
   list-style: disc;
 }
 
-.entry-content p+p {
-  text-indent: 2em;
+.entry-content ol li {
+  list-style: decimal;
 }
 
-.entry-content .photo {
-  float: left;
+.entry-content .photo, .entry-content .wp-caption {
   margin-bottom: 0.8em;
 }
 
-.entry-content .photo a {
+.entry-content .photo a, .entry-content .wp-caption a {
   border: none;
   background: transparent;
 }
 
-.entry-content .photo img {
+.entry-content .photo img, .entry-content .wp-caption img {
   background-color: #fff;
   border: 1px solid #333;
 }
 
-.entry-content .photo .caption {
+.entry-content .photo .caption, .wp-caption-text {
   text-align: center;
   font-style: italic;
+  font-size: 75%;
   margin-top: 0.8em;
 }
 
@@ -208,6 +237,10 @@ a:hover, #title a:hover {
   margin: 1.6em 3.2em;
 }
 
+.entry-content p, .entry-content div {
+  margin: 1.6em 0;
+}
+
 .entry-content h3 {
   font-size: 1.2em;
   text-transform: uppercase;
@@ -220,7 +253,7 @@ a:hover, #title a:hover {
   margin-top: 1.6em;
 }
 
-.entry-title .meta .edit a {
+.meta .edit a {
   border-color: #f00;
   background-color: #fffbfb;
   background-color: rgba(255,0,0,0.2);
@@ -228,7 +261,7 @@ a:hover, #title a:hover {
   padding: 0 1em;
 }
 
-.entry-title .meta .edit a:hover {
+.meta .edit a:hover {
   background-color: #fffafa;
   background-color: rgba(255,0,0,0.3);
 }
@@ -304,7 +337,6 @@ a:hover, #title a:hover {
   color: #fff;
   padding: 50px 0 50px 100px;
   margin-top: 50px;
-  font-weight: bold;
 }
 
 #sidebar a {
@@ -320,13 +352,13 @@ a:hover, #title a:hover {
 
 #sidebar h2 {
   font-size: 1.2em;
-  font-style: italic;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 #sidebar .widget {
   float: left;
-  width: 150px;
+  width: 175px;
   padding-left: 0;
   padding-right: 50px;
   color: #fff;
@@ -385,4 +417,46 @@ a:hover, #title a:hover {
 
 .newmonth {
   margin-top: 1.6em;
+}
+
+#lwp_sfd { 
+  font-weight: bold; 
+  font-size: 1.2em;
+}
+
+#lwp_sbf {
+  margin-bottom: 1.6em;
+}
+
+#lwp_ps div {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#lwp_ps #lwp_cloud {
+  text-transform: none;
+  font-weight: normal;
+}
+
+#lwp_cloud a {
+  margin: 0 0.5em 0 0;
+}
+
+#lwp_f {
+  margin: 1.6em 0 !important;
+}
+
+#lwp_f table { 
+  margin: 0;
+}
+
+#lwp_f td { 
+  border: none; 
+  padding: 0;
+  vertical-align: middle;
+}
+
+#lwp_f td a {
+  border: none;
 }
