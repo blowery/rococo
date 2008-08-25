@@ -9,7 +9,7 @@
       <div id="post-<?php the_ID(); ?>" class="post hentry">
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <div class="meta">
-          <abbr class="published" title="<?php the_time('c'); ?>"><?php the_date(); ?></abbr>. 
+          <abbr class="published" title="<?php the_time('r'); ?>"><?php the_date(); ?></abbr>. 
           <?php comments_popup_link("no comments.", "1 comment.", "% comments.", "comments", "closed comments"); ?>
         <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
         </div>
@@ -33,6 +33,9 @@
   <?php endif; ?>
 
 </div>
+
+<script type="text/javascript" src="/js/dojo/dojo.js"></script>
+<script type="text/javascript" src="/js/blowery/index.js"></script>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
