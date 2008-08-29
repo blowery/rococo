@@ -3,13 +3,14 @@
   <head>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
+    <link rel="stylesheet" href="/js/dijit/themes/tundra/tundra.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" type="text/css" media="print" />
     <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="http://feeds.blowery.org/blowery" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body class="tundra">
     <div id="page">
       <h1 id="title">
         <a href="<?php bloginfo('url'); ?>" title="Take me home">b<span class="leftout">en</span>lowery</a>

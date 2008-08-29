@@ -61,13 +61,18 @@ blockquote, q {
 
 body {
   font-family: Cambria, "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 13.3333px;
+  font-size: 1em;
   line-height: 1.6;
 }
 
 abbr {
   text-transform: lowercase;
   font-variant: small-caps;
+}
+
+abbr.published {
+  text-transform: none;
+  font-variant: normal;
 }
 
 strong, em, b, i, 
@@ -181,6 +186,10 @@ th {
   left: 650px;
   width: 100px;
   border-left: 1px solid #eee;
+}
+
+.entry-content a {
+  padding: 2px 1px;
 }
 
 .entry-content li {
@@ -459,4 +468,36 @@ th {
 
 #lwp_f td a {
   border: none;
+}
+
+.entry-content .roastChart { 
+  width: 600px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.entry-content .dojoxLegendNode {
+  border: 1px solid #eee;
+}
+
+.entry-content .dojoxLegendNode td {
+  padding: 0;
+  border: none;
+  vertical-align: middle;
+}
+
+.entry-content .dojoxLegendNode div {
+  margin: 0.5em 0;
+  padding-top: 6px;
+}
+
+.entry-content .dojoxLegendNode .dojoxLegendIcon { 
+  padding-right: 0.5em;
+  margin: 0.5em 0;
+}
+
+.entry-content .dojoxLegendNode .dojoxLegendText {
+  padding-right: 1em;
 }
