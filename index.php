@@ -9,7 +9,7 @@
       <div id="post-<?php the_ID(); ?>" class="post hentry">
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <div class="meta">
-          <abbr class="published" title="<?php the_time('D, d M Y H:m:s -0400'); ?>"><?php the_time("M j Y"); ?></abbr>. 
+          <abbr class="published" title="<?php the_time('D, d M Y H:m:s -0000', true); ?>"><?php the_time("M j Y"); ?></abbr>. 
           <?php comments_popup_link("no comments.", "1 comment.", "% comments.", "comments", "closed comments"); ?>
         <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
         </div>

@@ -224,7 +224,7 @@ th {
   margin-top: 0.8em;
 }
 
-.entry-content pre, .entry-content code {
+.entry-content pre, .entry-content code, .entry-content kbd {
   font-family: Monaco, Consolas, Andale Mono, "Courier New", monospace;
   font-size: 80%;
 }
