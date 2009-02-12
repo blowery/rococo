@@ -61,7 +61,7 @@ blockquote, q {
 
 body {
   font-family: Cambria, "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 0.8125em;
   line-height: 1.6;
 }
 
@@ -91,12 +91,12 @@ em,i {
 a:link, a:visited {
   color: #000;
   text-decoration: none;
-  background-color: #ffc;
+  font-weight: bold;  
   /*background-color: rgba(255, 247, 204, 0.2);*/
 }
 
 a:visited {
-  color: #666;
+  color: #333;
 }
 
 a:hover, #title a:hover {
@@ -121,7 +121,7 @@ th {
   font-size: 1.2em;
 }
 #page {
-  width: 600px;
+  width: 650px;
   margin-left: 100px;
 }
 
@@ -499,4 +499,8 @@ th {
 
 .entry-content .dojoxLegendNode .dojoxLegendText {
   padding-right: 1em;
+}
+
+.gallery-icon a {
+  background-color: transparent;
 }

@@ -11,7 +11,7 @@
         <div class="meta">
           <abbr class="published" 
                               title="<?php the_time('c'); ?>"><?php the_time('M j Y'); ?></abbr>.
-          <?php comments_popup_link("No comments.", "1 comment.", "% comments.", "comments", "Sorry, comments are closed."); ?>
+          <?php comments_popup_link("Add a comment.", "1 comment. Add your own.", "% comments. Add your own.", "comments", "Sorry, comments are closed."); ?>
         <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
         </div>
         <div class="entry-content">
