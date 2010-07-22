@@ -35,7 +35,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
     line-height: 1;
     color: #404040;
-    background: #fff;
+    background: #eee url(images/tile.gif);
 }
 ol, ul {
     list-style: none;
@@ -60,9 +60,9 @@ blockquote, q {
 /* End Eric Meyer CSS Reset */
 
 body {
-  font-family: Cambria, "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.8125em;
-  line-height: 1.6;
+  font-family: "Lucida Grande", Cambria, "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 abbr {
@@ -81,27 +81,34 @@ strong, em, b, i,
 .entry-content blockquote 
 .entry-content h4,
 .archives .datetime {
-  font-family: Cambria, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Lucida Grande", Cambria, "Lucida Sans", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 em,i {
   font-style: italic;
 }
 
+a { 
+  -webkit-transition: color 0.5s linear;
+}
+
 a:link, a:visited {
-  color: #000;
+  color: #33b;
   text-decoration: none;
-  font-weight: bold;  
-  /*background-color: rgba(255, 247, 204, 0.2);*/
+  border-bottom: 1px dotted #dde;
 }
 
 a:visited {
-  color: #333;
+  color: #669;
 }
 
-a:hover, #title a:hover {
-  background-color: #ffa;
-  /*background-color: rgba(255,247,204,0.5);*/
+a:hover {
+  border-bottom: 1px solid #ddf;
+  color: #00f;
 }
 table {
   border-collapse: collapse;
@@ -121,20 +128,33 @@ th {
   font-size: 1.2em;
 }
 #page {
-  width: 650px;
-  margin-left: 100px;
+  width: 800px;
+  margin-left: 0px;
 }
 
 #title {
-  margin: 50px 0 50px -50px;
+  margin: 1em 0 0 25px;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 200%;
+  position: absolute;
+  top: 0px; 
+  left: 800px;
+  opacity: .25;
+  -moz-opacity: .25;
+  line-height: 1.2;
+  z-index: 0;
+  -webkit-transition: opacity 0.25s linear;
+}
+
+#title:hover {
+  opacity: 0.75;
 }
 
 #title a {
   color: #333;
   border: none;
   background: transparent;
+  -webkit-transition: color 1s linear;
 }
 
 #title a .leftout {
@@ -143,37 +163,73 @@ th {
 
 .hfeed {
   position: relative;
+  padding: 1px 2em 8em;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,.8);
+  border: 1px solid #ddd;
+  border-width: 0 1px;
+  z-index: 1;
+  box-shadow: 0px 0px 5px #333;
+  -webkit-box-shadow: 0px 0px 5px #333;
+  -moz-box-shadow: 0px 0px 5px #333;
 }
 
 .hentry {
   clear: both;
-  margin: 3.2em 0 6.4em;
+  margin: 0 0 9.6em;
 }
 
 .entry-title {
-  font-size: 1.5em;
+  font-size: 200%;
   font-weight: bold;
-  margin: 0.8em 0 0;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.entry-title a { 
+  font-weight: bold;
+  border-bottom: 1px transparent solid;
+  text-shadow: #fff 1px 1px;
 }
 
 .entry-title a, .navigation a {
   color: #333;
-  background-color: transparent;
 }
 
 .entry-title a:hover, .navigation a:hover {
-  background-color: #ffc;
+  color: #000;
+  border-bottom: 1px solid #ddf;
 }
 
 .meta {
   font-size: 82.5%;
   color: #888;
   font-weight: normal;
+  text-align: left;
+  margin-top: 1em;
 }
 
 .meta a {
   color: #777;
   font-weight: bold;
+}
+
+.meta a:hover {
+  color: #000;
+}
+
+.entry-content, .widget {
+  margin: 1.6em 0;
+  font-size: .75em;   
+}
+
+.widget .entry-content {
+  font-size: 1em;
+}
+
+.widgettitle a {
+  color: inherit;
 }
 
 .entry-content .aside {
@@ -182,25 +238,32 @@ th {
   line-height: 2.13333;
   padding: 2.13333em 0 2.13333em 1em;
   position: absolute;
-  left: 650px;
+  left: 700px;
   width: 100px;
-  border-left: 1px solid #eee;
+  border: 1px solid #ff0;
+  background-color: white;
+  background-color: rgba(255,255,0,.3);
 }
 
-.entry-content a {
-  padding: 2px 1px;
-}
-
-.entry-content li {
+.entry-content li, .comment-entry li {
   margin: 0 3.2em;
 }
 
-.entry-content ul li {
+.entry-content ul li, .comment-entry ul li {
   list-style: disc;
 }
 
-.entry-content ol li {
+.entry-content ol li, .comment-entry ol li {
   list-style: decimal;
+}
+
+.entry-content img.size-full {
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 3px;
 }
 
 .entry-content .photo, .entry-content .wp-caption {
@@ -220,32 +283,32 @@ th {
 .entry-content .photo .caption, .wp-caption-text {
   text-align: center;
   font-style: italic;
-  font-size: 75%;
+  /*font-size: 75%; */
   margin-top: 0.8em;
 }
 
 .entry-content pre, .entry-content code, .entry-content kbd {
-  font-family: Monaco, Consolas, Andale Mono, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, Andale Mono, "Courier New", monospace;
   font-size: 80%;
 }
 
-.entry-content pre {
+.entry-content pre, .comment-entry pre {
   line-height: 2;
   margin: 2em 0;
   padding-left: 2em;
 }
 
-.entry-content dt {
+.entry-content dt, .comment-entry dt {
   font-style: italic;
   margin-top: 1.6em;
 }
 
-.entry-content blockquote {
+.entry-content blockquote, .comment-entry blockquote {
   font-style: italic;
   margin: 1.6em 3.2em;
 }
 
-.entry-content p, .entry-content div {
+.entry-content p, .entry-content div, .comment-entry p, .comment-entry div {
   margin: 1.6em 0;
 }
 
@@ -341,40 +404,36 @@ th {
 }
 
 #sidebar {
-  background: #383d44 url(images/bg-footer.jpg) repeat-x top left;
-  color: #fff;
-  padding: 50px 0 50px 100px;
+  color: #666;
+  padding-left: 25px;
   margin-top: 50px;
+  position: absolute;
+  top: 50px;
+  left: 800px;
+  /*font-size: 0.75em;*/
 }
 
 #sidebar a {
   /*background-color: rgba(0,0,0,0.05); */
-  background-color: transparent;
-  color: #fff;
-  border-bottom: 1px solid #000;
 }
 
 #sidebar a:hover {
-  border-bottom: 1px solid #eee;
+  
 }
 
 #sidebar h2 {
-  font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
+  color: #333;
 }
 
 #sidebar .widget {
-  float: left;
   width: 175px;
-  padding-left: 0;
-  padding-right: 50px;
-  color: #fff;
+  margin: 2em 0;
 }
 
-#sidebar .widget li {
-  margin-left: 1em;
-  text-indent: -1em;
+#sidebar .widget li, #sidebar .widget .textwidget {
+  margin: 1em 0 0 0;
   /*padding-left: 0.8em; save this till i find an item icon */
 }
 
@@ -503,4 +562,19 @@ th {
 
 .gallery-icon a {
   background-color: transparent;
+}
+
+.g_Ad {
+  width: 728px;
+  margin: 0 auto;
+}
+
+.entry-content .aligncenter {
+    display: block;
+    margin: 1em 0;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #fff;
 }

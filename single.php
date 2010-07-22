@@ -4,6 +4,18 @@
 <div id="content" class="hfeed">
   
   <?php if(have_posts()) : ?>
+<div class="g_Ad">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8971193464927560";
+/* 728x90, created 4/23/08 */
+google_ad_slot = "8510043230";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
 
     <?php while (have_posts()) : the_post(); ?>
       <div id="post-<?php the_ID(); ?>" class="post hentry">
