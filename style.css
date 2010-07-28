@@ -256,14 +256,21 @@ th {
 .entry-content .aside {
   text-indent: 0;
   font-size: 75%;
-  line-height: 2.13333;
+  line-height: 1.5;
   padding: 2.13333em 0 2.13333em 1em;
   position: absolute;
-  left: 700px;
+  left: -125px;
   width: 100px;
   border: 1px solid #ff0;
-  background-color: white;
-  background-color: rgba(255,255,0,.3);
+  background-color: #ee0;
+  background-color: rgba(255,255,0,.7);
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  box-shadow: 0 0 2px #000;
+  -moz-box-shadow: 0 0 2px #000;
+  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
 }
 
 .entry-content li, .comment-entry li {
