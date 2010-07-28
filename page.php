@@ -20,11 +20,10 @@ google_ad_height = 90;
       <div id="post-<?php the_ID(); ?>" class="post hentry">
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <div class="meta">
-          <abbr class="published" 
-                              title="<?php the_time('c'); ?>"><?php the_time('M j Y'); ?></abbr>.
-          <?php comments_popup_link("Add a comment.", "1 comment. Add your own.", "% comments. Add your own.", "comments", "Sorry, comments are closed."); ?>
-        <?php edit_post_link("Edit", '<span class="edit">', "</span>"); ?>
+          <abbr class="published" title="<?php the_time('D, d M Y H:m:s -0000', true); ?>"><?php the_time("M j Y"); ?></abbr>
+          <div class="comments"><?php comments_popup_link("0 notes", "1 note", "% notes", "notes", ""); ?></div>
         </div>
+        <?php edit_post_link("Edit", '<div class="meta edit">', "</div>"); ?>
         <div class="entry-content">
           <?php the_content(); ?>
         </div>

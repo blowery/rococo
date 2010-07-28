@@ -34,8 +34,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
     line-height: 1;
-    color: #404040;
-    background: #eee url(images/tile.gif);
+    color: #000;
+    background: rgb(105,86,64) url(images/dark_floor.jpg);
+    
 }
 ol, ul {
     list-style: none;
@@ -71,6 +72,7 @@ abbr {
 }
 
 abbr.published {
+  display: block;
   text-transform: none;
   font-variant: normal;
 }
@@ -93,22 +95,21 @@ em,i {
 }
 
 a { 
-  -webkit-transition: color 0.5s linear;
+  -webkit-transition: all 0.25s ease-out;
 }
 
 a:link, a:visited {
-  color: #33b;
+  color: #292;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
-  border-bottom: 1px dotted #dde;
 }
 
 a:visited {
-  color: #669;
+  color: #2b2;
 }
 
 a:hover {
-  border-bottom: 1px solid #ddf;
-  color: #00f;
+  border-bottom: 1px solid #5b5;
 }
 table {
   border-collapse: collapse;
@@ -128,55 +129,62 @@ th {
   font-size: 1.2em;
 }
 #page {
-  width: 800px;
-  margin-left: 0px;
+  width: 750px;
+  margin-left: 150px;
+  margin-bottom: 150px;
 }
 
 #title {
-  margin: 1em 0 0 25px;
+  margin: 53px 0 0 0;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 300%;
   position: absolute;
   top: 0px; 
-  left: 800px;
-  opacity: .25;
-  -moz-opacity: .25;
+  left: 900px;
   line-height: 1.2;
   z-index: 0;
-  -webkit-transition: opacity 0.25s linear;
-}
-
-#title:hover {
-  opacity: 0.75;
 }
 
 #title a {
-  color: #333;
+  color: rgba(0,0,0,.6);
   border: none;
-  background: transparent;
-  -webkit-transition: color 1s linear;
+  -webkit-transition: all 2.5s ease-out;
 }
 
-#title a .leftout {
-  color: #888;
+
+#title a:hover {
+  color: rgba(68,187,68,.8);
 }
+
+
+#title a .leftout {
+  color: rgba(50,50,50,.5);
+  -webkit-transition: all 1.25s ease-out;
+}
+
+#title a:hover .leftout {
+  color: rgba(88,207,88,.7);
+}
+
+
 
 .hfeed {
   position: relative;
   padding: 1px 2em 8em;
-  background-color: rgb(255,255,255);
-  background-color: rgba(255,255,255,.8);
-  border: 1px solid #ddd;
+  background-color: #fff;
+  border: 1px solid #333;
   border-width: 0 1px;
-  z-index: 1;
-  box-shadow: 0px 0px 5px #333;
-  -webkit-box-shadow: 0px 0px 5px #333;
-  -moz-box-shadow: 0px 0px 5px #333;
+  z-index: 2;
+  box-shadow: 0px 0px 10px #000;
+  -webkit-box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
 }
 
 .hentry {
   clear: both;
   margin: 0 0 9.6em;
+  position: relative;
+  z-index: 2;
 }
 
 .entry-title {
@@ -198,26 +206,39 @@ th {
 }
 
 .entry-title a:hover, .navigation a:hover {
-  color: #000;
-  border-bottom: 1px solid #ddf;
+  color: #292;
 }
 
 .meta {
-  font-size: 82.5%;
-  color: #888;
-  font-weight: normal;
-  text-align: left;
-  margin-top: 1em;
-}
-
-.meta a {
-  color: #777;
+  font-size: .75em;
+  color: #fff;
   font-weight: bold;
+  text-align: right;
+  position: absolute;
+  top: -10px;
+  left: -159px;
+  width: 100px;
+  padding: 12px;
+  border: 1px solid rgba(30,30,30,.8);
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  background-color: rgba(30,30,30,.5);
+  z-index: 1;
 }
 
-.meta a:hover {
-  color: #000;
+.meta.edit {
+  top: 75px;
+  background-color: rgba(0,68,12,.5);
+  border-color: rgba(0,68,12,.8);
 }
+
+/*
+.meta .comments {
+  font-size: .75em;
+}
+*/
 
 .entry-content, .widget {
   margin: 1.6em 0;
@@ -404,27 +425,38 @@ th {
 }
 
 #sidebar {
-  color: #666;
-  padding-left: 25px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0 12px 12px 0;
+  -moz-border-radius: 0 12px 12px 0;
+  -webkit-border-radius: 0 12px 12px 0;
+  padding: 25px;
   margin-top: 50px;
   position: absolute;
   top: 50px;
-  left: 800px;
+  left: 900px;
   /*font-size: 0.75em;*/
 }
 
+
 #sidebar a {
-  /*background-color: rgba(0,0,0,0.05); */
+  color: #3a3;
 }
 
 #sidebar a:hover {
-  
+  color: #4b4;
 }
+
 
 #sidebar h2 {
   font-weight: bold;
+  font-size: 1.25em;
   text-transform: uppercase;
-  color: #333;
+  color: #fff;
+}
+
+#sidebar h2 a {
+  color: inherit;
 }
 
 #sidebar .widget {
@@ -465,7 +497,7 @@ th {
 
 .archives .datetime {
   float: left;
-  text-align: right;
+  text-align: left;
   width: 4em;
   padding-right: 1em;
   color: #999;
@@ -480,6 +512,7 @@ th {
   margin-top: 1.6em;
   border-bottom: 1px solid #ddd;
   font-weight: bold;
+  font-size: 200%;
 }
 
 .newmonth {
@@ -566,15 +599,19 @@ th {
 
 .g_Ad {
   width: 728px;
-  margin: 0 auto;
+  margin-left: -23px;
 }
 
-.entry-content .aligncenter {
+.entry-content .aligncenter, .entry-content .alignnone {
     display: block;
     margin: 1em 0;
     border: 1px solid #ddd;
     padding: 3px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: #999 0px 2px 3px;
+    -moz-box-shadow: #999 0px 2px 3px;
+    -webkit-box-shadow: #999 0px 2px 3px;
     background-color: #fff;
 }

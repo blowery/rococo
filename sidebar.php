@@ -8,7 +8,7 @@
   <div>
     <input type="hidden" name="cx" value="partner-pub-8971193464927560:77lg3xsvfx7" />
     <input type="hidden" name="ie" value="UTF-8" />
-    <input type="text" name="q" size="31" />
+    <input type="text" name="q" size="15" />
     <input type="submit" name="sa" value="Search" />
   </div>
 </form>
