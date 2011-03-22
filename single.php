@@ -21,7 +21,7 @@ google_ad_height = 90;
       <div id="post-<?php the_ID(); ?>" class="post hentry">
         <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
         <div class="meta">
-          <abbr class="published" title="<?php the_time('D, d M Y H:m:s -0000', true); ?>"><?php the_time("M j Y"); ?></abbr>
+          <abbr class="published" title="<?php the_time('Y-m-d\TH:m:s\Z', true); ?>"><?php the_time("M j Y"); ?></abbr>
           <div class="comments"><?php comments_popup_link("0 notes", "1 note", "% notes", "notes", ""); ?></div>
         </div>
         <?php edit_post_link("Edit", '<div class="meta edit">', "</div>"); ?>

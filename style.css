@@ -79,15 +79,18 @@ abbr.published {
 
 strong, em, b, i, 
 .slanty, 
-#sidebar h2, 
 .entry-content blockquote 
 .entry-content h4,
 .archives .datetime {
   font-family: "Lucida Grande", Cambria, "Lucida Sans", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+h1, h2, h3  {
+  font-family: 'Tangerine',"Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 em,i {
@@ -95,6 +98,9 @@ em,i {
 }
 
 a { 
+  transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
   -webkit-transition: all 0.25s ease-out;
 }
 
@@ -137,18 +143,22 @@ th {
 #title {
   margin: 53px 0 0 0;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 600%;
   position: absolute;
-  top: 0px; 
+  top: -25px; 
   left: 900px;
-  line-height: 1.2;
+  line-height: 1;
   z-index: 0;
 }
 
 #title a {
+  position: relative;
   color: rgba(0,0,0,.6);
   border: none;
-  -webkit-transition: all 2.5s ease-out;
+  transition: color 1s ease-out;
+  -ms-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -webkit-transition: color 1s ease-out;
 }
 
 
@@ -159,7 +169,10 @@ th {
 
 #title a .leftout {
   color: rgba(50,50,50,.5);
-  -webkit-transition: all 1.25s ease-out;
+  transition: color .5s ease-out;
+  -ms-transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
 }
 
 #title a:hover .leftout {
@@ -182,15 +195,15 @@ th {
 
 .hentry {
   clear: both;
-  margin: 0 0 9.6em;
+  margin: 0 0 3.2em;
   position: relative;
   z-index: 2;
 }
 
 .entry-title {
-  font-size: 200%;
-  font-weight: bold;
-  line-height: 1.2;
+  font-size: 300%;
+  font-weight: 700;
+  line-height: 1;
   text-align: left;
   margin-top: 1em;
 }
@@ -198,7 +211,8 @@ th {
 .entry-title a { 
   font-weight: bold;
   border-bottom: 1px transparent solid;
-  text-shadow: #fff 1px 1px;
+  text-shadow: 3px 2px 0px #ddd;
+  position:relative;
 }
 
 .entry-title a, .navigation a {
@@ -208,6 +222,11 @@ th {
 .entry-title a:hover, .navigation a:hover {
   color: #292;
 }
+
+/*.entry-title a:hover {
+  text-shadow: 2px -50px 0px #fff;
+}
+*/
 
 .meta {
   font-size: .75em;
@@ -234,11 +253,18 @@ th {
   border-color: rgba(0,68,12,.8);
 }
 
-/*
+
 .meta .comments {
-  font-size: .75em;
 }
-*/
+
+.meta .comments a {
+  color: #9f9;
+}
+
+.meta .comments a:hover {
+  color: #3f3;
+}
+
 
 .entry-content, .widget {
   margin: 1.6em 0;
@@ -296,6 +322,11 @@ th {
 
 .entry-content .photo, .entry-content .wp-caption {
   margin-bottom: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding: 14px 6px;
+  text-align: center;
 }
 
 .entry-content .photo a, .entry-content .wp-caption a {
@@ -305,14 +336,16 @@ th {
 
 .entry-content .photo img, .entry-content .wp-caption img {
   background-color: #fff;
-  border: 1px solid #333;
+  border: 1px solid #ddd;
+  border-radius: 2px;
 }
 
-.entry-content .photo .caption, .wp-caption-text {
-  text-align: center;
-  font-style: italic;
-  /*font-size: 75%; */
-  margin-top: 0.8em;
+.entry-content .photo .caption, .entry-content .wp-caption-text {
+  text-align: right;
+  font-size: 1.6em;
+  font-family: 'Permanent Marker';  
+/*font-size: 75%; */
+  margin: .8em 1.6em .8em 0em;
 }
 
 .entry-content pre, .entry-content code, .entry-content kbd {
@@ -340,15 +373,16 @@ th {
   margin: 1.6em 0;
 }
 
-.entry-content h3 {
-  font-size: 1.2em;
-  text-transform: uppercase;
+.hfeed h3 {
+  font-size: 2.4em;
+  font-weight: bold;
   margin: 1.6em 0 0 0;
 }
 
 .entry-content h4 {
+  font-family: inherit;
   font-size: 100%;
-  font-style: italic;
+  font-weight: 700;
   margin-top: 1.6em;
 }
 
@@ -367,7 +401,8 @@ th {
 
 .navigation {
   margin: 3.2em 0;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-family: Tangerine,"Lucida Grande", Cambria, "Lucida Sans", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
 }
 
 .navigation .forward {
@@ -378,53 +413,87 @@ th {
   float: left;
 }
 
-#respond, #comments {
-  margin: 3.2em 0 1.6em 0;
-  text-transform: uppercase;
-  font-weight: bold;
+#comments {
+  margin: 1.6em 0 0.8em 0;
   clear: both;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.commentlist {
+  border: 1px solid #eee;
+  background: #f9f9f9;;
+  padding: 1.6em;;
+  font-size: .75em;
+}
+
+.commentlist li ul li {
+  margin-left: 50px;
+  border-left: 5px solid #efefef; 
+  padding: 0.8em 0 0.8em 1.6em;
+}
+
+.commentlist li ul li ul li {
+  margin-left: 50px;
+}
+
+#respond h3 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+#respond p {
+  font-size: 0.75em;
 }
 
 .comment {
-  padding: 1.6em;
+  margin: 1.6em 0;
 }
 
 .comment+.comment {
   border-top: 1px dotted #ddd;
 }
 
-.commentlist .highlighted {
-  background-color: #fffbf0;
+.commentlist .bypostauthor .comment-body {
+  background-color: #FFF7CC;
 }
 
-.commenter {
-  float: left;
-  width: 150px;
+.comment-author {
+  margin-left: 50px;
+  font-style: italic;
+  font-size: 75%;
   position: relative;
 }
 
-.commenter .avatar {
+.comment-author img {
   position: absolute;
-  top: 0; left: 0;
+  top: 0; left: -50px;
 }
 
-.commenter .commentmetadata, .commenter cite {
+.comment-meta {
+  font-style: italic;
+  font-size: 75%;
   margin-left: 50px
 }
 
-.comment-entry {
-  margin-left: 200px;
+.comment-body {
+  margin-bottom: 1.6em;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.comment-body p {
+  margin-left: 50px;
 }
 
 #commentform p {
-  margin: 1.6em 0;
+  line-height: 1.6;
 }
 
 #commentform label {
-  text-transform: uppercase;
-  padding-left: 1em;
-  border-bottom: 1px dotted #ddd;
+  padding-left: 1.6em;
   color: #666;
+  font-style: italic;
 }
 
 #commentform textarea {
@@ -447,18 +516,17 @@ th {
 
 
 #sidebar a {
-  color: #3a3;
+  color: #9f9;
 }
 
 #sidebar a:hover {
-  color: #4b4;
+  color: #6f6;
 }
 
 
 #sidebar h2 {
   font-weight: bold;
-  font-size: 1.25em;
-  text-transform: uppercase;
+  font-size: 3.2em;
   color: #fff;
 }
 
@@ -607,18 +675,4 @@ th {
 .g_Ad {
   width: 728px;
   margin-left: -23px;
-}
-
-.entry-content .aligncenter, .entry-content .alignnone {
-    display: block;
-    margin: 1em 0;
-    border: 1px solid #ddd;
-    padding: 3px;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    box-shadow: #999 0px 2px 3px;
-    -moz-box-shadow: #999 0px 2px 3px;
-    -webkit-box-shadow: #999 0px 2px 3px;
-    background-color: #fff;
 }
